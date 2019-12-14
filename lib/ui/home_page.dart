@@ -47,7 +47,12 @@ class _HomePageState extends State<HomePage> {
               decoration: InputDecoration(
                   labelText: "Pesquise aqui!",
                   labelStyle: TextStyle(color: Colors.white),
-                  border: OutlineInputBorder(),
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.white, width: 3.0),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.blueAccent, width: 3.0),
+                  )
               ),
               style: TextStyle(color: Colors.white, fontSize: 18.0),
               textAlign: TextAlign.center,
